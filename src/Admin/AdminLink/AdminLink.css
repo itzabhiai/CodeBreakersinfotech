@@ -1,0 +1,65 @@
+.mainadminlink{
+
+color: #8e21e7;
+   height: 100%;
+    width: 100%;
+    background-image: url('https://res.cloudinary.com/dzy4cqgr6/image/upload/v1700839019/12_qhvgzw.webp');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.boxadminlink{
+   
+    display: grid;
+    grid-template-columns: 300px  80px;
+    height: 100px;
+    width: 30%;
+    
+  line-height: 90%;
+   justify-content: start;
+    align-items: center;
+   text-align: start;
+   padding-left: 30px;
+    -webkit-box-shadow: -1px 2px 15px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 15px -7px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 15px -7px rgba(0,0,0,0.75);;
+  border-radius: 10px;
+  margin:20px ;
+}
+.boxadminlink h3{
+    text-decoration: none;
+ }
+
+@media screen and (max-width: 768px) {
+    .mainadminlink{
+
+      height: 100%;
+        width: 100%;
+
+    }
+    .boxadminlink{
+        height: 100px;
+        width: 90%;
+        grid-template-columns: 250px  80px;
+        text-align: start;
+        padding-left: 20px;
+
+    }
+
+
+}
+.go{
+width: 60px;
+background: transparent;
+border-radius: 10px;
+color: white;
+}
+.go:hover{
+    color: blueviolet;
+    background: #1800ee;
+}

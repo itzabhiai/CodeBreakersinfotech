@@ -1,0 +1,28 @@
+.uploadportfolio input,
+  .uploadblog textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .portfolio-main{
+   margin: 0;
+   padding: 0;
+width: 100%;
+
+  }
+  .portfolio-Card{
+    max-height: 750px;
+    width: 220px;
+    padding: 20px 0px;
+
+  }
+  .portfolio-Card img{
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 95%;
+    aspect-ratio: 2/2;
+    object-fit: contain;
+  }

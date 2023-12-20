@@ -1,0 +1,79 @@
+
+.techno-main{
+
+   margin-top: 100px;
+   text-align: justify;
+   
+}
+.techno-main h1{
+    padding-left: 15px;
+    color: #8e21e7;
+}
+.techno-container{
+height: 1200px;
+background: #8e21e7;
+width: 100%;
+display: flex;
+
+flex-direction: column;
+align-items: center;
+text-align: justify;
+
+}
+.techno-container h2{
+    padding-right: 80%;
+   
+   color: #ffffff;
+
+}
+
+.image-techno{
+/* max-width: 1700px; */
+/* margin-top: 140px; */
+
+height: 150px;
+display:flex;
+flex-wrap: wrap;
+align-items: center;
+padding-left: 10px;
+background: rgba(0, 0, 0, 0.15);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+width: 90%;
+}
+.image-techno img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+   padding: 10px 2px;
+
+    
+    }
+
+    @media screen and (max-width: 760px) {
+        .techno-container h2{
+            position: relative;
+           padding-right: 220px;
+           color: #ffffff;
+        }
+        .techno-container{
+            height: 750px;
+            background: #8e21e7;
+            width: 100%;
+            display: flex;
+            
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            
+            
+            }
+            .image-techno{
+                height: 70px;
+            }
+    }
+.firebase{
+    padding-left: 30px;
+}

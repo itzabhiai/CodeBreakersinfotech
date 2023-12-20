@@ -1,0 +1,111 @@
+.displayUploadCareer{
+    
+}
+.dcareer-main1{
+    
+}
+.apply{
+    width: 90px;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    background:#8e21e7 ;
+    border: 1px solid grey;
+  
+    color: white;
+
+}
+.apply:hover{
+
+    background:#2177e7;
+    color: white;
+    border: 0px;
+
+  }
+.buttoncontrol{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    margin-top: 30px;
+}
+.carercard{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+  
+
+}
+.ccard{
+   background-color: #e7e7e7;
+   border-radius: 10px;
+    width: 380px;
+    height: 220px;
+   padding: 5px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ccard h3{
+    color: #3d88e9;
+   
+
+}
+.careericon{
+    font-size: 50px;
+    color: #3d88e9;
+}
+.hiring{
+    color: #8e21e7;
+    font-size: 40px;
+}
+
+.wearehiring p{
+    padding: 0 20%;
+    color: rgb(22, 22, 22);
+}
+.wearehiring h4{
+font-size: 20px;
+font-weight: 400;
+}
+.opening{
+    color: #8e21e7;
+    font-size: 30px;
+    font-weight: 700;
+}
+.careerbackground{
+    background: #0307ff21;
+    padding: 40px 0px;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1285px) {
+    .carercard{
+        height: 600px;
+    }
+
+    .ccard{
+        margin: 20 20px;
+
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .carercard{
+        height: 750px;
+    }
+
+    .ccard{
+        margin: 10 0px;
+
+    }
+    .wearehiring p{
+        padding: 0 10px;
+    }
+
+}

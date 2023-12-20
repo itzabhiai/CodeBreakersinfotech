@@ -1,0 +1,53 @@
+/* Add this CSS to your stylesheet or component */
+
+/* Style for the entire Job component */
+div {
+    margin: 20px;
+  }
+  
+  /* Style for the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Style for table header */
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style for image in the table */
+  img {
+    max-width: 80px;
+    max-height: 60px;
+    border-radius: 5px;
+  }
+  
+  /* Style for buttons in the table */
+  button {
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Style for loading message */
+  p {
+    margin-top: 10px;
+  }
+  

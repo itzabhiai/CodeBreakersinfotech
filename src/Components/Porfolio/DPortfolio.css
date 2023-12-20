@@ -1,0 +1,27 @@
+.main-display-portfoliio{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.display-portfoliio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.portfolio-Display-Card{
+    max-height: 750px;
+    width: 220px;
+    padding: 20px 0px;
+}
+.display-portfolio-background{
+    width: 95%;
+    background: #0026fd11;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}

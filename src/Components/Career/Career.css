@@ -1,0 +1,102 @@
+.main-career{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+}
+.upload-career-card{
+    width: 90%;
+border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.uploadcareer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    margin-bottom: 15px;
+}
+.uploadcareer input,
+  .uploadblog textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  /* .dcareer-main{
+    height: auto;
+    width: ;
+    display: flex;
+    align-items: center;
+   
+   
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+  .main-card{
+    height: 160px;
+    width: 20%;
+ 
+    padding: 20px;
+    margin:10px 20px;
+    background-color: #f1eded;
+    border-radius: 10px;
+  }
+  .main-career-display{
+   height: auto;
+    width: 100%;
+    
+  
+    display: flex;
+   
+   margin: 0%;
+   text-align: start;
+    flex-wrap: wrap;
+margin-bottom: 140px;
+   
+  }
+  .open-modal-button{
+    width: 90px;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid grey;
+    padding-left: px;
+  }
+  .open-modal-button:hover{
+
+    background:#8e21e7;
+    color: white;
+    border: 0px;
+
+  }
+  .careerCard{
+    line-height: 7px;
+
+  }
+  .careerp:nth-child(4){
+    font-size: 12px;
+    color: rgb(17, 0, 255);
+    font-weight: 500;
+  }
+  @media screen and (max-width: 750px) {
+
+
+    .main-card{
+        width: 80%;
+    }
+    .main-career-display{
+      justify-content: center;
+    }
+  }
