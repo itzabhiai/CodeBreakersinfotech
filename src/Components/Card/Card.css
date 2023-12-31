@@ -1,21 +1,44 @@
 .items {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto; 
     padding: 20px;
   }
   
   .entry {
     max-height: 600px;
-    flex-shrink: 0; /* Prevent flex items from shrinking */
-    flex-grow: 0; /* Prevent flex items from growing */
-    flex-basis: 300px; /* Set initial width of each card */
-    margin-right: 20px; /* Adjust margin between cards */
+    flex-shrink: 0; 
+    flex-grow: 0; 
+    flex-basis: 300px; 
+    margin-right: 20px; 
     padding: 20px;
-    background-color: #f0f0f0; /* Example background color */
+    background-color: #f0f0f0;
     border-radius: 8px;
+    animation: scrollItems 20s linear infinite; 
+   
   }
   .entry img{
     width: 50%;
     aspect-ratio: 2/2;
     border-radius: 50%;
   }
+  .items {
+    display: flex;
+    overflow-x: hidden; 
+    padding: 20px;
+  }
+  @keyframes scrollItems {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(calc(-100% - 20px * 4)); 
+    }
+  }
+  .items {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+
+ 

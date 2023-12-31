@@ -1,17 +1,20 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
- const Navbar = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [showImage, setShowImage] = useState(false);
+  const location = useLocation(); // React Router's useLocation hook
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -25,30 +28,27 @@ import './Navbar.css';
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-  
 
   useEffect(() => {
     const handleScroll = () => {
-       if(window.scrollY >=10){
-        console.log(window.scrollY)
-        setShowImage(true)
-      } else{
-        setShowImage(false)
+      if (window.scrollY >= 10) {
+        setShowImage(true);
+      } else {
+        setShowImage(false);
       }
-   
-  
     };
 
- 
     window.addEventListener('scroll', handleScroll);
 
- 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); 
+  }, []);
 
-    
+  // Reset menu state on route change
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
   return (
     <>
     <nav  className={showImage? "navbar active" : "navbar "}>
@@ -73,16 +73,16 @@ import './Navbar.css';
   Services
   </div>
   <div class="dropdown-menu" id="dropdownMenu">
-   <Link to='/web' style={{textDecoration:'none'}}> <div class="dropdown-item" >Web Development</div> </Link>
-   <Link to='/android-app' style={{textDecoration:'none'}}> <div class="dropdown-item" >Android App Development</div></Link>
-   <Link to='/ios-app' style={{textDecoration:'none'}}><div class="dropdown-item" >IOS App Development</div></Link>
-   <Link to='/ottapp' style={{textDecoration:'none'}}><div class="dropdown-item" >OTT/TV Apps</div></Link>
-   <Link to='/testing' style={{textDecoration:'none'}}><div class="dropdown-item" >Testing & QA</div></Link>
-   <Link to='/ui-desgin' style={{textDecoration:'none'}}><div class="dropdown-item" >UI/UX Design</div></Link>
-   <Link to='/software' style={{textDecoration:'none'}}><div class="dropdown-item" >Software Development</div></Link>
+   <Link to='/web' onClick={closeMenu} onTouchStart={closeMenu} style={{textDecoration:'none'}}>  <div class="dropdown-item" >Web Development</div> </Link>
+   <Link to='/android-app' onClick={closeMenu} style={{textDecoration:'none'}}> <div class="dropdown-item" >Android App Development</div></Link>
+   <Link to='/ios-app' onClick={closeMenu} style={{textDecoration:'none'}}><div class="dropdown-item" >IOS App Development</div></Link>
+   <Link to='/ottapp' onClick={closeMenu} style={{textDecoration:'none'}}><div class="dropdown-item" >OTT/TV Apps</div></Link>
+   <Link to='/testing' onClick={closeMenu} style={{textDecoration:'none'}}><div class="dropdown-item" >Testing & QA</div></Link>
+   <Link to='/ui-desgin' onClick={closeMenu} style={{textDecoration:'none'}}><div class="dropdown-item" >UI/UX Design</div></Link>
+   <Link to='/software' onClick={closeMenu} style={{textDecoration:'none'}}><div class="dropdown-item" >Software Development</div></Link>
 
 
-   <Link to='/digital-marketing' style={{textDecoration:'none'}}><div class="dropdown-item" >Digital Marketing</div></Link> 
+   <Link to='/digital-marketing' onClick={closeMenu} style={{textDecoration:'none'}}><div class="dropdown-item" >Digital Marketing</div></Link> 
  
 
   </div>
@@ -102,13 +102,15 @@ import './Navbar.css';
             <Link to="/blog" className="nav-link" onClick={() => setMenuOpen(false)}>
               Blog
             </Link> </li>
-         <span className="nav-item1">
-            <li >
+
             <Link to="/contact-us" className="decor" onClick={() => setMenuOpen(false)}>
-              Contect Us
-            </Link>
-          </li>
+
+         <span className="bn632-hover bn27">
+            
+             <p>Contect Us</p> 
+          
             </span>
+            </Link>
         </ul>
       </div>
     </nav>

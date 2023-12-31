@@ -4,6 +4,7 @@ import { FaFacebook ,FaGithub } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
 import { Link } from 'react-router-dom';
+import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="footer-distributed">
@@ -15,6 +16,20 @@ const Footer = () => {
               src="https://res.cloudinary.com/ddkyeuhk8/image/upload/v1702117256/sibztxkzea6bxtod0ehf.png"
               alt=""
             />
+             <div className="footer-icons">
+          <a href="#">
+            <i className="insta"> <IoLogoInstagram /></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-face"><FaFacebook /></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-linkedin"><CiLinkedin /></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-github"> <FaGithub /></i>
+          </a>
+        </div>
           </span>
         </h3>
         <p className="footer-links">
@@ -34,12 +49,12 @@ const Footer = () => {
         <div>
           <i className="fa fa-map-marker"></i>
           <p>
-            <span>444 S. Cedros Ave</span> Solana Beach, California
+            <span> <FaMapMarkerAlt />444 S. Cedros Ave</span> Solana Beach, California
           </p>
         </div>
         <div>
           <i className="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+          <p><FaPhone/> +1.555.555.5555</p>
         </div>
         <div>
           <i className="fa fa-envelope"></i>
@@ -54,20 +69,7 @@ const Footer = () => {
           <span>About the company</span>
           E-commerce (electronic commerce) is the buying and selling of goods and services, or the transmitting of funds or data, over an electronic network, primarily the internet.
         </p>
-        <div className="footer-icons">
-          <a href="#">
-            <i className="insta"> <IoLogoInstagram /></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-face"><FaFacebook /></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-linkedin"><CiLinkedin /></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-github"> <FaGithub /></i>
-          </a>
-        </div>
+       
         <p className="footer-company-name">Code Brakers Infotech © 2023</p>
 
       </div>

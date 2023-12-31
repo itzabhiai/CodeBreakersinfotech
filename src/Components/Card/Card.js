@@ -37,15 +37,15 @@ const Card = () => {
   return (
     <div>
       <h3> Our Amazing Customers</h3>
-    <div className="items"> {/* Add className="items" for the scrollable container */}
-      {entries.map((entry, index) => (
-        <div className="entry" key={index}>
-          <p className="name">{entry.name}</p>
-          <img src={entry.imgSrc} alt="Smiling chick" />
-          <p className="quote">{entry.quote}</p>
-        </div>
-      ))}
-    </div>
+      <div className="items"> {/* Add className="items" for the scrollable container */}
+        {entries.map((entry, index) => (
+          <div className="entry" key={index}>
+            <p className="name">{entry.name}</p>
+            <img src={entry.imgSrc} alt="Smiling chick" />
+            <p className="quote">{entry.quote}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import { Techno } from '../../Components/Technology/Techno'
 import { GetQuoteForm } from '../../Components/ContactUs/GetQuoteForm'
 import Card from '../../Components/Card/Card'
 import { Helmet } from 'react-helmet';
+import { TechTrends } from '../../Components/TechTrends/TechTrends'
 export const Home = () => {
   return (
     <div>
@@ -23,7 +24,7 @@ export const Home = () => {
         <WhyUs/>
         <ServicesComponent/>
         <Techno/>
-
+<TechTrends/>
 
         <Card/>
         <GetQuoteForm/>

@@ -1,0 +1,25 @@
+.wat{
+    height: 50px;
+    width: 30%;
+   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+  bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  
+  z-index: 12;
+margin-bottom: 15px;
+}
+.wat img{
+   
+  z-index: 12;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    margin-right: 15px;
+        margin-left: 15px;
+        height: 40px;
+        width: 40px;
+}

@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 .mainweb{
     height: 100%;
     width: 100%;
 }
 .mainweb p{
-  font-weight: 300;
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+   font-family: 'Open Sans', sans-serif;
+   color:RGB(59, 60, 61);
+   line-height:24.96px;
 }
 .webhero{
  background-color: #1e62f3f3;
 
-    height: 100vh;
+    height: 52vh;
     width: 100%;
     position: relative;
     padding-top: 120px;
@@ -50,7 +56,7 @@ width: 50%;
 .webherodata p{
   font-size: 22px;
   text-align: start;
-  
+  color: white;
 }
 .btn-donate {
   margin: 40px 20px 0 20px;
@@ -98,7 +104,7 @@ width: 50%;
        
         background-size: cover;
         background-repeat: no-repeat;
-        height: 70vh;
+        height: 55vh;
         width: 100%;
         position: relative;
   
@@ -113,6 +119,7 @@ width: 50%;
       font-size: 20px;
       padding: 0px 20px;
       text-align: start;
+      color: white;
       
     }
     .webherodata{
@@ -130,7 +137,6 @@ width: 50%;
 
 /* web card */
 .webbackground{
-background: #023cfa23;
 position: relative;
 top: -20px;
 
@@ -162,7 +168,7 @@ top: -20px;
   border: 0.1px solid rgba(128, 128, 128, 0.315);
    border-radius: 10px;
     width: 380px;
-  height: 300px;
+  max-width: 800px;
    padding: 15px;
     margin: 0 20px;
     display: flex;
@@ -172,8 +178,15 @@ top: -20px;
 }
 .wcard p{
   text-align: start;
-  
- 
+ font-weight: 400;
+ font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color:RGB(59, 60, 61);
+  line-height:24.96px;
+}
+.wcard p1{
+  color: #2600ff;
+  font-weight: 700;
 }
 .wcard h3{
     color: #3d88e9;
@@ -183,6 +196,14 @@ top: -20px;
 .webicon{
     font-size: 50px;
     color: #3d88e9;
+}
+.webicon1{
+  font-size: 50px;
+  color:gold;
+}
+.webicon2{
+  font-size: 50px;
+  color:rgb(0, 255, 13);
 }
 /* @media screen and (max-width: 1285px) {
     .webcard{

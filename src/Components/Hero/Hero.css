@@ -1,8 +1,8 @@
 .hero{
-    background-image: url("");
+    background-image: url("https://www.dropbox.com/scl/fi/hxcs37m30s5mf46dniyyi/Untitled-design-3.gif?rlkey=ljm41dp4m7fh9venhc9gru09h&dl=1");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 65vh;
     width: 100%;
     position: relative;
     
@@ -32,7 +32,7 @@ width: 50%;
  
 
  top: -39;
- height: 100%;
+ height: 130%;
 
 }
 .herodata h1{

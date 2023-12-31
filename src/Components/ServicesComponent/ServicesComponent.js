@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ServicesComponent.css'; // Import CSS file for styling
-
+import {Link} from "react-router-dom"
 const ServicesComponent = () => {
   const [selectedText, setSelectedText] = useState(null);
   const [selectedService, setSelectedService] = useState('');
@@ -23,9 +23,11 @@ const ServicesComponent = () => {
         'Our iOS app development involves leveraging the latest technologies to build engaging applications for Apple devices. We ensure optimal performance, employing Swift and Xcode to create user-centric apps. From ideation to App Store deployment, we deliver innovative iOS solutions.'
     },
     {
-      title: 'CMS Development',
+      title: 'OTT/Tv Apps',
       content:
-        'Our CMS development services revolve around creating flexible Content Management Systems. We tailor CMS solutions to manage and deliver digital content efficiently. With scalable architectures and user-friendly interfaces, we empower businesses to control their online presence seamlessly.'
+        'OTT/TV apps require a perfect blend of content and technology. Our development process revolves around creating captivating interfaces and seamless streaming experiences.'
+
+        
     },
     {
       title: 'Testing & QA',
@@ -52,13 +54,37 @@ const ServicesComponent = () => {
     setSelectedTitle(defaultService.title);
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
-  const handleClick = (content, title) => {
-    setSelectedService(content);
-    setSelectedTitle(title);
-  };
+  
 
   const handleClickTitle = (title) => {
     setSelectedText(title === selectedText ? null : title);
+  };
+
+  const serviceRoutes = {
+    'Web Development': 'web',
+    'Android APP Development': 'android-app',
+    'iOS App Development': 'ios-app',
+    'Testing & QA':"testing",
+    'UI/UX Design':'ui-desgin',
+    'Digital Marketing':'digital-marketing',
+    'OTT/Tv Apps':'ottapp'
+
+  };
+
+  const [selectedLink, setSelectedLink] = useState('');
+
+  useEffect(() => {
+    const defaultService = serviceData[0];
+    setSelectedService(defaultService.content);
+    setSelectedTitle(defaultService.title);
+    setSelectedLink(serviceRoutes[defaultService.title]);
+  }, []);
+
+  const handleClick = (content, title) => {
+    setSelectedService(content);
+    setSelectedTitle(title);
+    setSelectedLink(serviceRoutes[title]);
+    setSelectedText(title);
   };
 
   return (
@@ -71,7 +97,6 @@ const ServicesComponent = () => {
               <h3
                 onClick={() => {
                   handleClick(service.content, service.title);
-                  handleClickTitle(service.title);
                 }}
                 className={selectedText === service.title ? 'clicked' : 'clickable'}
               >
@@ -80,13 +105,21 @@ const ServicesComponent = () => {
             </div>
           ))}
         </div>
-        <div data-aos="fade-up" className='contant'>
-        <div className="selected-title">
-          {selectedTitle && <h3>{selectedTitle}</h3>}
-        </div>
-        <div className={`paragraph ${selectedService ? 'fade-in' : ''}`}>
-          <p >{selectedService}</p>
-        </div>
+        <div data-aos="fade-up" className="contant">
+          <div className="selected-title">
+            {selectedTitle && <h3>{selectedTitle}</h3>}
+          </div>
+          <div className={`paragraph ${selectedService ? 'fade-in' : ''}`}>
+            <p>{selectedService}</p>
+           
+            {selectedLink && (
+              <div className="routing-buttons">
+                <Link to={`/${selectedLink}`}>
+                  <button className='btnmore'>More →</button>
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

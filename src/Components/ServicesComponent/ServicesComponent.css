@@ -85,7 +85,11 @@ padding-left: 40px;
 color: rgb(0, 0, 0);
 font-size: 25px;
   }
-
+.routing-buttons{
+  display: flex;
+ justify-content: end;
+  margin-right: 30px;
+}
  @media screen and (max-width: 1070px) {
   .headings h3{
     padding-left: 30px;
@@ -143,4 +147,41 @@ font-size: 25px;
        .selected-title{
         margin-top: 20px;
       }
+     
+ }
+
+
+
+ /* button  */
+
+ .btnmore{
+  border: 1px solid rgb(102, 101, 101);
+    padding: 8px;
+   margin-top: 1.2%;
+   margin-right: 30px;
+   font-size: 15px;
+   width: 100px;
+   border-radius: 10px;
+   margin-left: 100px;
+   background: transparent;
+   cursor: pointer;
+ }
+ .btnmore:hover{
+  background: #8e21e7;
+  color: white;
+  transition: 0.4s ease-in-out;
+ }
+ @media screen and (max-width: 760px) {
+  .btnmore {
+    border: 1px solid rgb(102, 101, 101);
+    padding: 1px;
+    margin-top: 1.2%;
+    margin-right: 30px;
+    font-size: 9px;
+    width: 58px;
+    border-radius: 10px;
+    margin-left: 100px;
+    background: transparent;
+    cursor: pointer;
+}
  }

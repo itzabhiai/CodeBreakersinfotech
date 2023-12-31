@@ -34,6 +34,7 @@ import UIDesign from './Components/Service/UIDesign';
 import DigitalMarketing from './Components/Service/DigitalMarketing';
 import TestingQA from './Components/Service/TestingQA';
 import OTTApps from './Components/Service/OTTApps';
+import Watsapp from './Components/Watsapp/Watsapp';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -69,7 +70,7 @@ function App() {
       ) : (
         <>
           <Navbar />
-
+<Watsapp/>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/admin" element={<Admin />} />

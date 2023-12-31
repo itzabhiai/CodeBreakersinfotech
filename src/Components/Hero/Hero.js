@@ -2,15 +2,10 @@ import React from 'react'
 import { useState,useEffect } from 'react';
 import "./Hero.css"
 import { Loder } from '../Loder/Loder';
+import { Link } from 'react-router-dom';
 export const Hero = () => {
   const [loading, setLoading] = useState(true);
-  const [videoSource, setVideoSource] = useState('');
 
-  useEffect(() => {
-    // Fetch the video source path or use an imported video path
-    const pathToVideo = '/https://res.cloudinary.com/ddkyeuhk8/video/upload/v1703060294/x4st7j37gh10u0h7ijrq.webm';
-    setVideoSource(pathToVideo);
-  }, []);
   useEffect(() => {
     // Simulate data loading
     fetchData().then(() => setLoading(false));
@@ -25,11 +20,6 @@ export const Hero = () => {
   return (
     
     <div className='hero'>
-      <video autoplay loop muted>
-  <source src={videoSource} type="video/webm"/>
-
-</video>
-
       {loading ? (
         <Loder/>
       ) : (
@@ -42,7 +32,7 @@ export const Hero = () => {
 market is our mission at Code Breakers Infotech. Delivering the best possible work is our
 main objective, as it should motivate our clients to choose us as their go-to web
 development partner.</p>
-<button className='btn-donate'>Schedule a free Consultation</button>
+<Link to='/contact-us'  style={{textDecoration:'none'}} > <button className='btn-donate'>Schedule a free Consultation</button></Link>
     </div>
     
     <div className='heroimg'>
