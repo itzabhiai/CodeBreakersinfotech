@@ -129,3 +129,13 @@ row-gap: 10px;
             color: white;
            }
  }
+hr{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 7px;
+    width: 100%;
+    background: #ff9101;
+    text-align: start;
+    border-radius: 10px;
+}

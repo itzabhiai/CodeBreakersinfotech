@@ -35,6 +35,9 @@
 color: white;
 font-size: 25px;
   }
+  .headings h3:hover{
+    background: #03e2ff;
+  }
   .clicked{
     background: #03e2ff;
    height: 40px;

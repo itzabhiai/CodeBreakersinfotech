@@ -3,7 +3,8 @@ import "./Techno.css"
 export const Techno = () => {
   return (
     <div className='techno-main'>
-        <h1> Technology We Use</h1>
+        <h1> Technology We Use  <div className='hr'><hr/></div> </h1>
+      
 <div className='techno-container'>
   
 <h2 data-aos="fade-up"> Frontend</h2>

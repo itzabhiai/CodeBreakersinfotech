@@ -4,7 +4,7 @@ export const TechTrends = () => {
   return (
     <div className='maintechtrend'>
 
-        <h1 >Unleash Your Potential with the Latest Tech Trends!</h1>
+        <h1 >Unleash Your Potential with the Latest Tech Trends! <div className='hr'><hr/></div></h1>
         <div className='techtrends-conaitner' >
         <div data-aos="fade-up" className='image-tech'>
 <img src='https://res.cloudinary.com/ddkyeuhk8/image/upload/v1703577335/rhio909gdlt0bdr99noc.png' alt='' />

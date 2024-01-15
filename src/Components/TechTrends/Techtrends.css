@@ -10,7 +10,7 @@
 }
 
 .techtrends-conaitner{
-    background: #8e21e7;
+    background: blue;
     height: 300px;
 }
 
@@ -40,7 +40,7 @@
             font-size: 20px;
             font-family: sans-serif;
             color: white;
-            margin: 15px 100px;
+            margin: 130px 100px;
         }
         @media screen and (max-width: 760px) {
 

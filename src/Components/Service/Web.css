@@ -2,13 +2,14 @@
 .mainweb{
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 255, 0.185);
 }
 .mainweb p{
   text-align: start;
   font-weight: 400;
   font-size: 16px;
    font-family: 'Open Sans', sans-serif;
-   color:RGB(59, 60, 61);
+   color:white;
    line-height:24.96px;
 }
 .webhero{
@@ -139,7 +140,7 @@ width: 50%;
 .webbackground{
 position: relative;
 top: -20px;
-
+background-color: rgb(0, 0, 255);
 }
 .webtxt{
   padding: 0 20px;
@@ -147,7 +148,7 @@ top: -20px;
 }
 .webtxt h2{
   padding-top: 30px;
-  color: blueviolet;
+  color: rgb(255, 255, 255);
   font-weight: 500;
 }
   
@@ -174,7 +175,7 @@ top: -20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+    background: #ffffff;
 }
 .wcard p{
   text-align: start;

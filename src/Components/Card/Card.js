@@ -36,7 +36,7 @@ const Card = () => {
 
   return (
     <div>
-      <h3> Our Amazing Customers</h3>
+      <h3> Testimonial <hr style={{width:"100px"}}/></h3>
       <div className="items"> {/* Add className="items" for the scrollable container */}
         {entries.map((entry, index) => (
           <div className="entry" key={index}>

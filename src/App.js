@@ -35,6 +35,7 @@ import DigitalMarketing from './Components/Service/DigitalMarketing';
 import TestingQA from './Components/Service/TestingQA';
 import OTTApps from './Components/Service/OTTApps';
 import Watsapp from './Components/Watsapp/Watsapp';
+import AboutUs from './Pages/AboutUs';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,19 +47,19 @@ function App() {
     });
     AOS.refresh();
 
-    fetchData(); // Call the fetchData function on component mount
+    fetchData(); 
   }, []);
 
   const fetchData = async () => {
     try {
-      // Simulate API call
+      
       await new Promise((resolve) => setTimeout(resolve, 2000)); // Replace with actual API call
 
-      // Update loading state when data is ready
+      
       setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
-      setLoading(false); // In case of an error, also set loading to false
+      setLoading(false); 
     }
   };
 
@@ -99,6 +100,8 @@ function App() {
             <Route exact path="/digital-marketing" element={<DigitalMarketing />} />
             <Route exact path="/testing" element={<TestingQA/>} />
             <Route exact path="/ottapp" element={<OTTApps/>} />
+            <Route exact path="/about" element={<AboutUs/>} />
+
 
 
 

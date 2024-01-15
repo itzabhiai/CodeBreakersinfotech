@@ -9,7 +9,8 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 const WhyUs = () => {
  return (
     <div className="why-us-container">
-      <h2>Why Us?</h2>
+      <h2>Why Us?    <hr style={{width:"100px"}}/></h2>
+   
       <div className="why-us">
       <div   data-aos="fade-right"
      data-aos-offset="300"

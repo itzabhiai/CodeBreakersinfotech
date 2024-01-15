@@ -89,7 +89,8 @@ const ServicesComponent = () => {
 
   return (
     <div className="services-container">
-      <h2>Service We Offer</h2>
+      <h2>Service We Offer<div className='hr'><hr/></div></h2>
+    
       <div className="services">
         <div data-aos="fade-up" className="headings">
           {serviceData.map((service, index) => (

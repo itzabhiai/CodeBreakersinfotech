@@ -102,6 +102,10 @@ const Navbar = () => {
             <Link to="/blog" className="nav-link" onClick={() => setMenuOpen(false)}>
               Blog
             </Link> </li>
+            <li className="nav-item">
+            <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>
+              About Us
+            </Link> </li>
 
             <Link to="/contact-us" className="decor" onClick={() => setMenuOpen(false)}>
 

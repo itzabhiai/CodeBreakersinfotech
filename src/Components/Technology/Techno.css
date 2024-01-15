@@ -74,3 +74,11 @@ border-radius: 10px;
 .firebase{
     padding-left: 30px;
 }
+.hr{
+    width: 10%;
+    height: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+}
